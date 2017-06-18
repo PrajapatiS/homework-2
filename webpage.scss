@@ -1,0 +1,95 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+//$grid-row-width:100em;
+$border-styles: 1px solid white;
+.bd{
+    background-image: url('image/blue.jpg');
+    background-position: center top;
+    }
+    .d_grid{
+        @include grid-row(12);
+        
+    }
+    .div_grid{
+         @include grid-column(3);
+         margin-top:280px;
+         height: 200px;
+    }
+    .p_num{
+        text-align: center;
+        font-size: 100px;
+        color:white;
+        //position: relative;
+    }
+    .p_date{
+        color:white;
+        text-align: center;
+        margin: -120px;
+    }
+    .div_user{
+        @include grid-row();
+       margin-top: 80px;
+       margin-right: 200px;
+    }
+    .d_user{
+        @include grid-column(9);
+    }
+    .txt_user{
+        border-color: red;
+        width: 700px;
+        height: 50px;
+       padding: 10px;
+       margin-left: 200px;
+       border-radius: 10px;
+    }
+    .btn_subr{
+        
+         width: 10%;
+         height: 50px;
+         background-color:blue;
+         border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+    }
+   
+    .div_img{
+     max-width: 45em;
+      height: 90px;
+      margin-left: 450px;
+      margin-top: 40px;
+      text-align: center;
+      color: white;
+     }
+    
+     .img_face{
+      width: 50px;
+      margin-right:180px;      
+     }
+
+     .img_tiwt{  
+          width: 50px;
+          background-color: white;                         
+          height: 50px;
+          float:right;
+          margin-right: 350px;
+          margin-top: -50px;
+     }
+
+     .img_googl{
+         height: 50px;
+         width: 50px;
+         background-color: dodgerblue;
+         float: right;
+         margin-right: 280px;
+         margin-top: -50px;
+     }
+
+    .btn_subr, .img_face, .img_tiwt, .img_googl{
+        &:hover{
+            background-color:gray;
+        }
+    }
+
+
+  
